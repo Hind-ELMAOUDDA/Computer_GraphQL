@@ -16,8 +16,8 @@ public class ComputerGraphQLController {
     private ComputerService computerService;
 
     @MutationMapping
-    public ComputerDto saveComputer(@Argument ComputerDto computerDto){
-        return computerService.saveComputer(computerDto);
+    public ComputerDto saveComputer(@Argument ComputerDto computer){
+        return computerService.saveComputer(computer);
     }
 
     @QueryMapping
